@@ -8,3 +8,6 @@ This BOT talks to you, in private or in regular channel, this BOT will play musi
 In the code I've written in comments the basic guidlines to my code, it describes what each chunk of code does and how it functionalizes the BOT.
 Go have a look.
 It's fun!!
+
+If you wanna try this BOT or have any queries or want any help building one you can join my DISCORD SERVER
+Here's my DISCORD SERVER LINK : https://discord.gg/dJ7zgYj
