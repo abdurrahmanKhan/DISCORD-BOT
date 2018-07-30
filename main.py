@@ -78,8 +78,8 @@ async def info(ctx, user: discord.Member):
    await bot.say(embed=embed)
    
 
-#to get the info of the server
-#-----------------------------
+#to get the information about the server
+#---------------------------------------
    
 @bot.command(pass_context=True)
 async def serverinfo(ctx):
