@@ -1,5 +1,5 @@
 # DISCORD-BOT
-Being my first project on PYTHON, I wanted it to be something different not common like Management System or Scaraper or anything so I choose to do this after a lot of research.
+Being my first project on PYTHON, I wanted it to be something different, like I didn't want any Management System or Scaraper or anything so I choose to do this after a lot of research.
 As the name is intriguing in itself, it has something to do with BOT, well of course it does!!
 Here's a BOT which I have created on basic PYTHON for DISCORD. It is obviously on DISCORD community.
 For this BOT you need to create your own server on DISCORD and make your BOT and then start coding it.
