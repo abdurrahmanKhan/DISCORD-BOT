@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
-from itertools import cycle5
+from itertools import cycle
 import json
 import os
 
@@ -203,10 +203,10 @@ async def leave(ctx):           #to exit your BOT from voice channel you need to
     await voice_bot.disconnect()
 
 @bot.command(pass_context=True)
-async def play(ctx, url):        # to play music you must call this function, (REMINDER: your BOT should be in voice channel)
+async def play(ctx):        # to play music you must call this function, (REMINDER: your BOT should be in voice channel)
         server = ctx.message.server
         voice_client = bot.voice_client_in(server)
-        player = voice_client.create_ffmpeg_player('F:\Music\Automatic.mp3', after= lambda: check_queue(server.id))
+        player = voice_client.create_ffmpeg_player('F:\Music\Automatic.mp3', after= lambda: check_queue(server.id))  #first argument would be the path of the song on your system
         players[server.id] = player
         player.start()
         await bot.say('Playing your awesome music!')
@@ -231,7 +231,7 @@ async def resume(ctx):         # calling this function will RESUME your music.
 #------------------------------------------------------------------------------------
     
 @bot.command(pass_context=True)
-async def queue(ctx, url):
+async def queue(ctx):
     server=ctx.message.server
     voice_client=bot.voice_client_in(server)
     player= voice_client.create_ffmpeg_player('F:\Music\Arms.mp3',after= lambda: check_queue(server.id))
