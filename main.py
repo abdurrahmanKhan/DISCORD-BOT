@@ -16,7 +16,7 @@ def check_queue(id):                #-------
         player.start()              #       |
                                     #-------
 
-bot = commands.Bot(command_prefix='#',help_command=None) # This is how you will denote your BOT.
+bot = commands.Bot(command_prefix='#',help_command=None,intents=discord.Intents.all()) # This is how you will denote your BOT.
 
 
 
